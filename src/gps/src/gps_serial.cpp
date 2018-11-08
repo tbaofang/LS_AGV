@@ -62,11 +62,11 @@ int main(int argc, char** argv)
                 result.data = gpfpd + "," + gtimu;
                 read_pub.publish(result);				
                 str.erase(0, loc3);
-                cout << "loc1 :" << loc1 << " loc2: " << loc2 <<" loc3: " << loc3 << endl;
-                cout << "[str.size:] " << str.size() << endl;
-                cout << "[gpfpd:] " << gpfpd << endl;
-                cout << "[gtimu:] " << gtimu << endl;
-                cout << "[result:] " << result.data.c_str() << endl << endl;              
+                // cout << "loc1 :" << loc1 << " loc2: " << loc2 <<" loc3: " << loc3 << endl;
+                // cout << "[str.size:] " << str.size() << endl;
+                // cout << "[gpfpd:] " << gpfpd << endl;
+                // cout << "[gtimu:] " << gtimu << endl;
+                // cout << "[result:] " << result.data.c_str() << endl << endl;              
             }
 	    }          
     }

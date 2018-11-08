@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(gps)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11 -std=c++14)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -145,8 +145,12 @@ include_directories(
 
 add_executable(gps_serial src/gps_serial.cpp)
 target_link_libraries(gps_serial ${catkin_LIBRARIES})
+
 add_executable(gps_parse src/gps_parse.cpp)
 target_link_libraries(gps_parse ${catkin_LIBRARIES})
+
+add_executable(imu_driver src/imu_driver.cpp)
+target_link_libraries(imu_driver ${catkin_LIBRARIES})
 
 
 ## Rename C++ executable without prefix
